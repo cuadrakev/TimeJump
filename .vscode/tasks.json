@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "MyProject Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Test",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Test",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Test",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Shipping",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Shipping",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Shipping",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Test",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Test",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Test",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Shipping",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Shipping",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxArm64",
+				"Shipping",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Debug",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"DebugGame",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Development",
+				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			}
+		}
+	]
+}
