@@ -37,7 +37,7 @@ void APortalViewRenderer::init()
     sceneCaptureComponent->TextureTarget              = nullptr;
     sceneCaptureComponent->bEnableClipPlane           = true;
     sceneCaptureComponent->bUseCustomProjectionMatrix = true;
-    sceneCaptureComponent->CaptureSource              = ESceneCaptureSource::SCS_SceneColorHDR;
+    sceneCaptureComponent->CaptureSource              = ESceneCaptureSource::SCS_FinalColorHDR;
     
     FPostProcessSettings postProcessSettings;
     postProcessSettings.bOverride_AmbientOcclusionQuality      = true;
@@ -153,12 +153,21 @@ void APortalViewRenderer::sceneCapture(ATwoWayGateBase *portal)
     UCameraComponent *camera = dynamic_cast<UCameraComponent*>(character->FindComponentByClass(UCameraComponent::StaticClass()));
     FVector cameraLocation = camera->GetComponentLocation();
     cameraLocation += portal->Offset;
-    //GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow,
-    //FString::Printf(TEXT("cameraLocation: %s"), *camera->GetComponentRotation().ToString()));
     sceneCaptureComponent->SetWorldLocation(cameraLocation);
     sceneCaptureComponent->SetWorldRotation(camera->GetComponentRotation());
     
-    sceneCaptureComponent->ClipPlaneNormal = portal->NewVar_0->GetActorForwardVector();
+    FVector portalForward = portal->NewVar_0->GetActorForwardVector();
+    FVector cameraForward = camera->GetForwardVector();
+    double angleDistance = portalForward.CosineAngle2D(cameraForward);
+    if(angleDistance >= 0)
+    {
+        sceneCaptureComponent->ClipPlaneNormal = portalForward;
+    }
+    else
+    {
+        sceneCaptureComponent->ClipPlaneNormal = portalForward.RotateAngleAxis(180, FVector(0.f, 0.f, 1.f));
+    }
+    
     sceneCaptureComponent->ClipPlaneBase = portal->NewVar_0->GetActorLocation() + (
                                            sceneCaptureComponent->ClipPlaneNormal * +1.5f);
     
