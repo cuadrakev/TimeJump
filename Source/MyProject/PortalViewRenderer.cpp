@@ -33,11 +33,11 @@ void APortalViewRenderer::init()
     
     sceneCaptureComponent->bCaptureEveryFrame         = false;
     sceneCaptureComponent->bCaptureOnMovement         = false;
-    sceneCaptureComponent->LODDistanceFactor          = 1;
+    sceneCaptureComponent->LODDistanceFactor          = 3;
     sceneCaptureComponent->TextureTarget              = nullptr;
     sceneCaptureComponent->bEnableClipPlane           = true;
     sceneCaptureComponent->bUseCustomProjectionMatrix = true;
-    sceneCaptureComponent->CaptureSource              = ESceneCaptureSource::SCS_FinalColorHDR;
+    sceneCaptureComponent->CaptureSource              = ESceneCaptureSource::SCS_SceneColorHDRNoAlpha;
     
     FPostProcessSettings postProcessSettings;
     postProcessSettings.bOverride_AmbientOcclusionQuality      = true;
@@ -169,7 +169,7 @@ void APortalViewRenderer::sceneCapture(ATwoWayGateBase *portal)
     }
     
     sceneCaptureComponent->ClipPlaneBase = portal->NewVar_0->GetActorLocation() + (
-                                           sceneCaptureComponent->ClipPlaneNormal * +1.5f);
+                                           sceneCaptureComponent->ClipPlaneNormal * -6.f);
     
     sceneCaptureComponent->TextureTarget = portalTexture;
     
@@ -180,5 +180,6 @@ void APortalViewRenderer::sceneCapture(ATwoWayGateBase *portal)
                                         
     sceneCaptureComponent->CustomProjectionMatrix = projectionData.ProjectionMatrix;
     portal->SetRenderTexture(portalTexture);
+    sceneCaptureComponent->HiddenActors = {portal->NewVar_0};
     sceneCaptureComponent->CaptureScene();
 }
