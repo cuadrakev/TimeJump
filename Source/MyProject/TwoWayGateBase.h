@@ -16,7 +16,11 @@ public:
     
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
     void SetRenderTexture(UTexture* RenderTexture);
+    UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+    void ClearRenderTexture();
     
+    UPROPERTY(BlueprintReadWrite)
     FVector Offset;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     ATwoWayGateBase *NewVar_0;
 };

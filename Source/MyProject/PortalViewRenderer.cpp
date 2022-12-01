@@ -33,11 +33,11 @@ void APortalViewRenderer::init()
     
     sceneCaptureComponent->bCaptureEveryFrame         = false;
     sceneCaptureComponent->bCaptureOnMovement         = false;
-    sceneCaptureComponent->LODDistanceFactor          = 3;
+    sceneCaptureComponent->LODDistanceFactor          = 1;
     sceneCaptureComponent->TextureTarget              = nullptr;
     sceneCaptureComponent->bEnableClipPlane           = true;
     sceneCaptureComponent->bUseCustomProjectionMatrix = true;
-    sceneCaptureComponent->CaptureSource              = ESceneCaptureSource::SCS_SceneColorHDRNoAlpha;
+    sceneCaptureComponent->CaptureSource              = ESceneCaptureSource::SCS_SceneColorHDR;
     
     FPostProcessSettings postProcessSettings;
     postProcessSettings.bOverride_AmbientOcclusionQuality      = true;
@@ -122,39 +122,45 @@ void APortalViewRenderer::generateRenderTexture()
 ATwoWayGateBase *APortalViewRenderer::selectPortal()
 {
     TActorIterator<ATwoWayGateBase> actorIterator(GetWorld(), ATwoWayGateBase::StaticClass(), EActorIteratorFlags::AllActors);
-    if(actorIterator)
+    ATwoWayGateBase *activePortal {nullptr};
+    float minDistance = 99999.f;
+    for( ; actorIterator; ++actorIterator)
     {
-        return *actorIterator;
+        ATwoWayGateBase *portal = *actorIterator;
+        FVector portalLocation = portal->GetActorLocation();
+        FVector playerLocation = character->GetActorLocation();
+        portal->ClearRenderTexture();
+        
+        float distance = FMath::Abs(FVector::Dist(portalLocation, playerLocation));
+        if(minDistance > distance)
+        {
+            minDistance = distance;
+            activePortal = portal;
+        }
     }
-    else
-    {
-        return nullptr;
-    }
+    
+    return activePortal;
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void APortalViewRenderer::sceneCapture(ATwoWayGateBase *portal)
 {
-    if(!sceneCaptureComponent || !portalTexture || !character || !portal || !m_ownerControllerp)
+    if(!sceneCaptureComponent || !portalTexture || !character)
     {
         return;
     }
     
-    UActorComponent *component = character->FindComponentByClass(UCameraComponent::StaticClass());
-    if(!component) return;
-    UCameraComponent *camera = dynamic_cast<UCameraComponent*>(component);
-    if(!camera)
-    {
-        return;
-    }
+    UCameraComponent *camera = dynamic_cast<UCameraComponent*>(character->FindComponentByClass(UCameraComponent::StaticClass()));
     FVector cameraLocation = camera->GetComponentLocation();
-    cameraLocation += portal->NewVar_0->Offset;
+    cameraLocation += portal->Offset;
+    //GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow,
+    //FString::Printf(TEXT("cameraLocation: %s"), *camera->GetComponentRotation().ToString()));
     sceneCaptureComponent->SetWorldLocation(cameraLocation);
     sceneCaptureComponent->SetWorldRotation(camera->GetComponentRotation());
     
     sceneCaptureComponent->ClipPlaneNormal = portal->NewVar_0->GetActorForwardVector();
     sceneCaptureComponent->ClipPlaneBase = portal->NewVar_0->GetActorLocation() + (
-                                           sceneCaptureComponent->ClipPlaneNormal * -1.5f);
+                                           sceneCaptureComponent->ClipPlaneNormal * +1.5f);
     
     sceneCaptureComponent->TextureTarget = portalTexture;
     

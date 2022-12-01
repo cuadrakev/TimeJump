@@ -14,3 +14,8 @@ void ATwoWayGateBase::SetRenderTexture_Implementation(UTexture* RenderTexture)
 {
 
 }
+
+void ATwoWayGateBase::ClearRenderTexture_Implementation()
+{
+
+}
