@@ -1,0 +1,14 @@
+{
+	"configurations": [
+		{
+			"name": "MyProjectEditor Editor Linux Development (MyProject)",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_MyProject.json"
+		},
+		{
+			"name": "Linux",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default.json"
+		}
+	]
+}
