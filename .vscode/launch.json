@@ -8,9 +8,9 @@
 			"preLaunchTask": "MyProject Linux Debug Build",
 			"args": [
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
@@ -20,9 +20,9 @@
 			"preLaunchTask": "MyProject Linux DebugGame Build",
 			"args": [
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
@@ -32,9 +32,9 @@
 			"preLaunchTask": "MyProject Linux Development Build",
 			"args": [
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
@@ -44,9 +44,9 @@
 			"preLaunchTask": "MyProject Linux Test Build",
 			"args": [
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
@@ -56,55 +56,55 @@
 			"preLaunchTask": "MyProject Linux Shipping Build",
 			"args": [
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch MyProjectEditor (Debug)",
 			"request": "launch",
-			"program": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"program": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
 			"preLaunchTask": "MyProjectEditor Linux Debug Build",
 			"args": [
 				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject"
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch MyProjectEditor (DebugGame)",
 			"request": "launch",
-			"program": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"program": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
 			"preLaunchTask": "MyProjectEditor Linux DebugGame Build",
 			"args": [
 				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject"
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch MyProjectEditor (Development)",
 			"request": "launch",
-			"program": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+			"program": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Binaries/Linux/UnrealEditor",
 			"preLaunchTask": "MyProjectEditor Linux Development Build",
 			"args": [
 				"/home/hurakano/Dokumenty/studia/gameMarmolade/MyProject.uproject"
 			],
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine",
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Generate Project Files",
 			"type": "coreclr",
 			"request": "launch",
-			"program": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
+			"program": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
 			"args": [
 				"-projectfiles",
 				"-vscode",
@@ -115,7 +115,7 @@
 			"console": "internalConsole",
 			"internalConsoleOptions": "openOnSessionStart",
 			"stopAtEntry": false,
-			"cwd": "/home/hurakano/Dokumenty/applications/UnrealEngine"
+			"cwd": "/home/hurakano/Dokumenty/applications/unrealEngine"
 		}
 	]
 }

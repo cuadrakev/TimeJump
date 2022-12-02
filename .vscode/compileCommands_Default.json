@@ -1,47 +1,47 @@
 [
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/MyProject.Build.cs",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/MyProject.cpp",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/MyProject.h",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/PortalViewRenderer.cpp",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/PortalViewRenderer.h",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/StaticFunctions.cpp",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/StaticFunctions.h",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/TwoWayGateBase.cpp",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	},
 	{
 		"file": "/home/hurakano/Dokumenty/studia/gameMarmolade/Source/MyProject/TwoWayGateBase.h",
-		"command": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
-		"directory": "/home/hurakano/Dokumenty/applications/UnrealEngine/Engine/Source"
+		"command": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/hurakano/Dokumenty/studia/gameMarmolade/.vscode/compileCommands_Default/MyProject.201.rsp",
+		"directory": "/home/hurakano/Dokumenty/applications/unrealEngine/Engine/Source"
 	}
 ]
